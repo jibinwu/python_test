@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/PycharmProjects/cms/.idea/cms.iml" filepath="$USER_HOME$/PycharmProjects/cms/.idea/cms.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/jhsc/.idea/jhsc.iml" filepath="$USER_HOME$/PycharmProjects/jhsc/.idea/jhsc.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/laGouDemo/.idea/laGouDemo.iml" filepath="$USER_HOME$/PycharmProjects/laGouDemo/.idea/laGouDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../python_script/.idea/python_script.iml" filepath="$PROJECT_DIR$/../python_script/.idea/python_script.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/python_test.iml" filepath="$PROJECT_DIR$/.idea/python_test.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/robotframework/.idea/robotframework.iml" filepath="$USER_HOME$/PycharmProjects/robotframework/.idea/robotframework.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/test/.idea/test.iml" filepath="$USER_HOME$/PycharmProjects/test/.idea/test.iml" />
+    </modules>
+  </component>
+</project>

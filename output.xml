@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.5.0 on win32)" generated="20191015 15:49:37.468" rpa="false">
+<suite name="Robotframework" id="s1" source="C:\Users\user\PycharmProjects\robotframework">
+<suite name="Robot Se" id="s1-s1" source="C:\Users\user\PycharmProjects\robotframework\robot_se.robot">
+<test name="Login" id="s1-s1-t1">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.baidu.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20191015 15:49:37.714" level="INFO">Opening browser 'chrome' to base url 'https://www.baidu.com'.</msg>
+<status endtime="20191015 15:49:41.311" status="PASS" starttime="20191015 15:49:37.714"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=kw</arg>
+<arg>robotframework</arg>
+</arguments>
+<msg timestamp="20191015 15:49:41.311" level="INFO">Typing text 'robotframework' into text field 'id=kw'.</msg>
+<status endtime="20191015 15:49:41.518" status="PASS" starttime="20191015 15:49:41.311"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=su</arg>
+</arguments>
+<msg timestamp="20191015 15:49:41.519" level="INFO">Clicking button 'id=su'.</msg>
+<status endtime="20191015 15:49:41.596" status="PASS" starttime="20191015 15:49:41.519"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status endtime="20191015 15:49:43.671" status="PASS" starttime="20191015 15:49:41.596"></status>
+</kw>
+<status endtime="20191015 15:49:43.672" status="PASS" starttime="20191015 15:49:37.713" critical="yes"></status>
+</test>
+<status endtime="20191015 15:49:43.673" status="PASS" starttime="20191015 15:49:37.499"></status>
+</suite>
+<suite name="Venv" id="s1-s2" source="C:\Users\user\PycharmProjects\robotframework\venv">
+<suite name="Lib" id="s1-s2-s1" source="C:\Users\user\PycharmProjects\robotframework\venv\Lib">
+<suite name="Site-Packages" id="s1-s2-s1-s1" source="C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages">
+<suite name="Robotframework-3.1.2.Dist-Info" id="s1-s2-s1-s1-s1" source="C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\robotframework-3.1.2.dist-info">
+<suite name="DESCRIPTION" id="s1-s2-s1-s1-s1-s1" source="C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\robotframework-3.1.2.dist-info\DESCRIPTION.rst">
+<test name="Valid Login" id="s1-s2-s1-s1-s1-s1-t1">
+<kw name="Open Browser To Login Page">
+<msg timestamp="20191015 15:49:43.702" level="FAIL">No keyword with name 'Open Browser To Login Page' found.</msg>
+<status endtime="20191015 15:49:43.702" status="FAIL" starttime="20191015 15:49:43.702"></status>
+</kw>
+<kw name="Close Browser" type="teardown">
+<msg timestamp="20191015 15:49:43.704" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status endtime="20191015 15:49:43.704" status="FAIL" starttime="20191015 15:49:43.704">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status endtime="20191015 15:49:43.704" status="FAIL" starttime="20191015 15:49:43.700" critical="yes">No keyword with name 'Open Browser To Login Page' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status endtime="20191015 15:49:43.705" status="FAIL" starttime="20191015 15:49:43.692"></status>
+</suite>
+<status endtime="20191015 15:49:43.706" status="FAIL" starttime="20191015 15:49:43.689"></status>
+</suite>
+<suite name="Robotframework Seleniumlibrary-4.0.0.Dist-Info" id="s1-s2-s1-s1-s2" source="C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\robotframework_seleniumlibrary-4.0.0.dist-info">
+<suite name="DESCRIPTION" id="s1-s2-s1-s1-s2-s1" source="C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\robotframework_seleniumlibrary-4.0.0.dist-info\DESCRIPTION.rst">
+<test name="Valid Login" id="s1-s2-s1-s1-s2-s1-t1">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20191015 15:49:43.760" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272'.</msg>
+<status endtime="20191015 15:49:48.431" status="PASS" starttime="20191015 15:49:43.760"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Login Page</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20191015 15:49:48.866" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status endtime="20191015 15:49:48.866" status="PASS" starttime="20191015 15:49:48.440"></status>
+</kw>
+<msg timestamp="20191015 15:49:48.869" level="FAIL">Title should have been 'Login Page' but was 'localhost'.</msg>
+<status endtime="20191015 15:49:48.870" status="FAIL" starttime="20191015 15:49:48.431"></status>
+</kw>
+<status endtime="20191015 15:49:48.870" status="FAIL" starttime="20191015 15:49:43.759"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status endtime="20191015 15:49:50.937" status="PASS" starttime="20191015 15:49:48.870"></status>
+</kw>
+<status endtime="20191015 15:49:50.937" status="FAIL" starttime="20191015 15:49:43.759" critical="yes">Title should have been 'Login Page' but was 'localhost'.</status>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status endtime="20191015 15:49:50.938" status="FAIL" starttime="20191015 15:49:43.709"></status>
+</suite>
+<status endtime="20191015 15:49:50.942" status="FAIL" starttime="20191015 15:49:43.707"></status>
+</suite>
+<status endtime="20191015 15:49:50.945" status="FAIL" starttime="20191015 15:49:43.685"></status>
+</suite>
+<status endtime="20191015 15:49:50.947" status="FAIL" starttime="20191015 15:49:43.680"></status>
+</suite>
+<status endtime="20191015 15:49:50.949" status="FAIL" starttime="20191015 15:49:43.676"></status>
+</suite>
+<status endtime="20191015 15:49:50.952" status="FAIL" starttime="20191015 15:49:37.471"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="1">Critical Tests</stat>
+<stat fail="2" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robotframework" id="s1" fail="2" pass="1">Robotframework</stat>
+<stat name="Robot Se" id="s1-s1" fail="0" pass="1">Robotframework.Robot Se</stat>
+<stat name="Venv" id="s1-s2" fail="2" pass="0">Robotframework.Venv</stat>
+<stat name="Lib" id="s1-s2-s1" fail="2" pass="0">Robotframework.Venv.Lib</stat>
+<stat name="Site-Packages" id="s1-s2-s1-s1" fail="2" pass="0">Robotframework.Venv.Lib.Site-Packages</stat>
+<stat name="Robotframework-3.1.2.Dist-Info" id="s1-s2-s1-s1-s1" fail="1" pass="0">Robotframework.Venv.Lib.Site-Packages.Robotframework-3.1.2.Dist-Info</stat>
+<stat name="DESCRIPTION" id="s1-s2-s1-s1-s1-s1" fail="1" pass="0">Robotframework.Venv.Lib.Site-Packages.Robotframework-3.1.2.Dist-Info.DESCRIPTION</stat>
+<stat name="Robotframework Seleniumlibrary-4.0.0.Dist-Info" id="s1-s2-s1-s1-s2" fail="1" pass="0">Robotframework.Venv.Lib.Site-Packages.Robotframework Seleniumlibrary-4.0.0.Dist-Info</stat>
+<stat name="DESCRIPTION" id="s1-s2-s1-s1-s2-s1" fail="1" pass="0">Robotframework.Venv.Lib.Site-Packages.Robotframework Seleniumlibrary-4.0.0.Dist-Info.DESCRIPTION</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20191015 15:49:36.829" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' ``docutils/parsers/rst/include`` Directory' in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\docutils\parsers\rst\include\README.txt' on line 2.</msg>
+<msg timestamp="20191015 15:49:36.870" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' border="0" width="150" height="35" /&gt;&lt;/a&gt;&lt;/td&gt;' in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\docutils\writers\pep_html\template.txt' on line 21.</msg>
+<msg timestamp="20191015 15:49:36.893" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' Copying Docutils' in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\docutils-0.15.2.dist-info\COPYING.txt' on line 2.</msg>
+<msg timestamp="20191015 15:49:36.893" level="ERROR">Error in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\docutils-0.15.2.dist-info\COPYING.txt': Unrecognized table header 'docutils/writers/s5_html/themes/default/iepngfix.htc:'. Available headers for data: 'Setting(s)', 'Variable(s)', 'Test Case(s)', 'Task(s)' and 'Keyword(s)'. Use 'Comment(s)' to embedded additional data.</msg>
+<msg timestamp="20191015 15:49:36.893" level="ERROR">Error in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\docutils-0.15.2.dist-info\COPYING.txt': Unrecognized table header 'docutils/utils/math/__init__.py,'. Available headers for data: 'Setting(s)', 'Variable(s)', 'Test Case(s)', 'Task(s)' and 'Keyword(s)'. Use 'Comment(s)' to embedded additional data.</msg>
+<msg timestamp="20191015 15:49:36.894" level="ERROR">Error in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\docutils-0.15.2.dist-info\COPYING.txt': Unrecognized table header 'docutils/utils/smartquotes.py'. Available headers for data: 'Setting(s)', 'Variable(s)', 'Test Case(s)', 'Task(s)' and 'Keyword(s)'. Use 'Comment(s)' to embedded additional data.</msg>
+<msg timestamp="20191015 15:49:36.894" level="ERROR">Error in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\docutils-0.15.2.dist-info\COPYING.txt': Unrecognized table header 'docutils/utils/math/math2html.py,'. Available headers for data: 'Setting(s)', 'Variable(s)', 'Test Case(s)', 'Task(s)' and 'Keyword(s)'. Use 'Comment(s)' to embedded additional data.</msg>
+<msg timestamp="20191015 15:49:36.894" level="ERROR">Error in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\docutils-0.15.2.dist-info\COPYING.txt': Unrecognized table header 'docutils/utils/roman.py, copyright by Mark Pilgrim, released under the'. Available headers for data: 'Setting(s)', 'Variable(s)', 'Test Case(s)', 'Task(s)' and 'Keyword(s)'. Use 'Comment(s)' to embedded additional data.</msg>
+<msg timestamp="20191015 15:49:36.894" level="ERROR">Error in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\docutils-0.15.2.dist-info\COPYING.txt': Unrecognized table header 'tools/editors/emacs/rst.el, copyright by Free Software Foundation,'. Available headers for data: 'Setting(s)', 'Variable(s)', 'Test Case(s)', 'Task(s)' and 'Keyword(s)'. Use 'Comment(s)' to embedded additional data.</msg>
+<msg timestamp="20191015 15:49:37.447" level="WARN">Automatically parsing other than '*.robot' files is deprecated. Convert 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\robotframework-3.1.2.dist-info\DESCRIPTION.rst' to '*.robot' format or use '--extension' to explicitly configure which files to parse.</msg>
+<msg timestamp="20191015 15:49:37.448" level="WARN">Automatically parsing other than '*.robot' files is deprecated. Convert 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\robotframework_seleniumlibrary-4.0.0.dist-info\DESCRIPTION.rst' to '*.robot' format or use '--extension' to explicitly configure which files to parse.</msg>
+<msg timestamp="20191015 15:49:43.699" level="ERROR">Error in file 'C:\Users\user\PycharmProjects\robotframework\venv\Lib\site-packages\robotframework-3.1.2.dist-info\DESCRIPTION.rst': Resource file 'resource.robot' does not exist.</msg>
+</errors>
+</robot>

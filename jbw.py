@@ -1,0 +1,17 @@
+a=1
+print(a)
+
+el1 = driver.find_element_by_id("android:id/button1")
+el1.click()
+el2 = driver.find_element_by_id("com.android.packageinstaller:id/permission_allow_button")
+el2.click()
+el3 = driver.find_element_by_id("com.lianxing.purchase.mock:id/btn_join")
+el3.click()
+el4 = driver.find_element_by_id("com.lianxing.purchase.mock:id/edit_username")
+el4.clear()
+el4.send_keys("15058321650")
+el5 = driver.find_element_by_id("com.lianxing.purchase.mock:id/edit_password")
+el5.clear()
+el5.send_keys("123456a")
+el6 = driver.find_element_by_id("com.lianxing.purchase.mock:id/btn_login")
+el6.click()
